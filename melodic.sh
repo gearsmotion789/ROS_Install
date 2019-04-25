@@ -17,13 +17,14 @@ sudo apt-get install ros-melodic-catkin python-catkin-tools
 sudo apt-get install ros-melodic-moveit
 mkdir -p ~/a-ws/src
 cd ~/a-ws/src
-sudo apt-get install git
-git clone -b kinetic-devel https://github.com/ros-planning/moveit_tutorials.git
-git clone -b kinetic-devel https://github.com/ros-planning/panda_moveit_config.git
+git clone https://github.com/ros-planning/moveit_tutorials.git -b melodic-devel
+git clone https://github.com/ros-planning/panda_moveit_config.git -b melodic-devel
+rosdep install -y --from-paths . --ignore-src --rosdistro melodic
 cd ..
+catkin config --extend /opt/ros/${ROS_DISTRO} --cmake-args -DCMAKE_BUILD_TYPE=Release
 catkin_make
-echo "source ~/a-ws/devel/setup.bash" >> ~/.bashrc
-sourc ~/.bashrc
+echo 'source ~/a-ws/devel/setup.bash' >> ~/.bashrc
+source ~/.bashrc
 
 # Install Atom Editor
 sudo add-apt-repository ppa:webupd8team/atom
