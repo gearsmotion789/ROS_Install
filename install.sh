@@ -18,6 +18,7 @@ sudo apt-get install git
 git clone -b kinetic-devel https://github.com/ros-planning/moveit_tutorials.git
 git clone -b kinetic-devel https://github.com/ros-planning/panda_moveit_config.git
 cd ..
+catkin_make
 echo "source ~/a-ws/devel/setup.bash" >> ~/.bashrc
 sourc ~/.bashrc
 
@@ -30,4 +31,4 @@ sudo apt-get install atom
 sudo apt-get install curl
 curl -sSL http://get.gazebosim.org | sh
 
-echo "INSTALLATION DONE! Restart your computer, then [catkin_make] in ~/a-ws"
+echo "INSTALLATION DONE!"
