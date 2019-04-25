@@ -9,10 +9,6 @@ echo "source /opt/ros/kinetic/setup.bash" >> ~/.bashrc
 source ~/.bashrc
 sudo apt install python-rosinstall python-rosinstall-generator python-wstool build-essential
 
-# Install Gazebo
-sudo apt-get install curl
-curl -sSL http://get.gazebosim.org | sh
-
 # Install MoveIt & samples
 sudo apt-get install ros-kinetic-catkin python-catkin-tools
 sudo apt-get install ros-kinetic-moveit
@@ -29,5 +25,9 @@ sourc ~/.bashrc
 sudo add-apt-repository ppa:webupd8team/atom
 sudo apt-get update
 sudo apt-get install atom
+
+# Install Gazebo
+sudo apt-get install curl
+curl -sSL http://get.gazebosim.org | sh
 
 echo "INSTALLATION DONE! Restart your computer, then [catkin_make] in ~/a-ws"
