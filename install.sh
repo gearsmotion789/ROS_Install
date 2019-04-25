@@ -10,6 +10,7 @@ source ~/.bashrc
 sudo apt install python-rosinstall python-rosinstall-generator python-wstool build-essential
 
 # Install Gazebo
+sudo apt-get install curl
 curl -sSL http://get.gazebosim.org | sh
 
 # Install MoveIt & samples
