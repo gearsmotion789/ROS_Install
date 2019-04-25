@@ -25,4 +25,9 @@ cd ..
 echo "source ~/a-ws/devel/setup.bash" >> ~/.bashrc
 sourc ~/.bashrc
 
+# Install Atom Editor
+sudo add-apt-repository ppa:webupd8team/atom
+sudo apt-get update
+sudo apt-get install atom
+
 echo "INSTALLATION DONE! Restart your computer, then [catkin_make] in ~/a-ws"
