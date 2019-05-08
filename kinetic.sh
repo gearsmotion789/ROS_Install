@@ -15,7 +15,7 @@ cd ..
 rosdep install --from-paths src --ignore-src --rosdistro=kinetic -y
 catkin_make
 echo "source ~/a-ws/devel/setup.bash" >> ~/.bashrc
-sourc ~/.bashrc
+source ~/.bashrc
 
 # Install Atom Editor
 sudo add-apt-repository ppa:webupd8team/atom
