@@ -22,6 +22,9 @@ sudo add-apt-repository ppa:webupd8team/atom
 sudo apt-get update
 sudo apt-get -y install atom
 
+# Fix Gazebo Error
+sudo apt-get -y upgrade libignition-math2
+
 # Install extras.sh
 bash ~/ROS_Install/extras.sh
 
