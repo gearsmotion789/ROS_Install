@@ -12,6 +12,7 @@ sudo apt install python-rosinstall python-rosinstall-generator python-wstool bui
 # Install MoveIt & samples
 sudo apt-get -y install ros-kinetic-catkin python-catkin-tools
 sudo apt-get -y install ros-kinetic-moveit
+sudo apt-get -y install ros-kinetic-moveit-visual-tools
 mkdir -p ~/a-ws/src
 cd ~/a-ws/src
 sudo apt-get install git
