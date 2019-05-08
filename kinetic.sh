@@ -13,11 +13,13 @@ sudo apt install python-rosinstall python-rosinstall-generator python-wstool bui
 sudo apt-get -y install ros-kinetic-catkin python-catkin-tools
 sudo apt-get -y install ros-kinetic-moveit
 sudo apt-get -y install ros-kinetic-moveit-visual-tools
+sudo apt-get -y install ros-kinetic-franka-description
 mkdir -p ~/a-ws/src
 cd ~/a-ws/src
 sudo apt-get install git
 git clone -b kinetic-devel https://github.com/ros-planning/moveit_tutorials.git
 git clone -b kinetic-devel https://github.com/ros-planning/panda_moveit_config.git
+rosdep install -y --from-paths . --ignore-src --rosdistro kinetic
 cd ..
 catkin_make
 echo "source ~/a-ws/devel/setup.bash" >> ~/.bashrc
