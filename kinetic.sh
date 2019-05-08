@@ -19,8 +19,8 @@ cd ~/a-ws/src
 sudo apt-get install git
 git clone -b kinetic-devel https://github.com/ros-planning/moveit_tutorials.git
 git clone -b kinetic-devel https://github.com/ros-planning/panda_moveit_config.git
-rosdep install -y --from-paths . --ignore-src --rosdistro kinetic
 cd ..
+rosdep install --from-paths src --ignore-src --rosdistro=kinetic -y
 catkin_make
 echo "source ~/a-ws/devel/setup.bash" >> ~/.bashrc
 sourc ~/.bashrc
